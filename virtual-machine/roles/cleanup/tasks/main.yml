@@ -1,0 +1,4 @@
+---
+
+- name: Remove apt package cache
+  command: apt clean

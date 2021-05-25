@@ -1,0 +1,30 @@
+---
+- hosts: all
+  become: yes  # This means that all tasks will be executed with sudo
+  pre_tasks:
+  
+    - name: Set hostname
+      ansible.builtin.hostname:
+        name: 'cookbook'
+
+    - name: Create user
+      ansible.builtin.user:
+        name: 'user'
+        password: '$6$8zAUmZ51xEYO$hu61YNOsRIShxLQGsoifkEmQCCseI.BfBeYJDCwBrYw3QfoKqVi3nxr3wFqgeJjWlz6HIIPYMGrFAUUpr8akJ.'
+        groups: ['sudo', 'vboxsf']
+        append: yes
+        shell: '/bin/bash'
+        state: 'present'
+
+    - name: Switch desktop user from vagrant
+      ansible.builtin.lineinfile:
+        path: /etc/lightdm/lightdm.conf
+        regexp: 'autologin-user=vagrant'
+        line: 'autologin-user=user'
+        state: 'present'
+        owner: 'root'
+        group: 'root'
+        mode: 0644
+        
+  roles:
+    - cleanup
