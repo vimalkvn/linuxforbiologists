@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>3.1.5. Notes &#8212; Linux for Biologists 2021 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/alabaster.css" />
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="3.2. Python packages" href="../python/index.html" />
+    <link rel="prev" title="3.1.4. Updating installed software" href="updating-software.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="notes">
+<h1><span class="section-number">3.1.5. </span>Notes<a class="headerlink" href="#notes" title="Permalink to this headline">¶</a></h1>
+<section id="the-command-line-version-apt">
+<span id="apt-install-software"></span><span id="index-0"></span><h2>The command-line version (<code class="docutils literal notranslate"><span class="pre">apt</span></code>)<a class="headerlink" href="#the-command-line-version-apt" title="Permalink to this headline">¶</a></h2>
+<p>You can use the <a class="reference internal" href="../../glossary.html#term-apt"><span class="xref std std-term">apt</span></a> package manager to install
+software from the command-line.</p>
+<section id="searching-for-software">
+<h3>Searching for software<a class="headerlink" href="#searching-for-software" title="Permalink to this headline">¶</a></h3>
+<p>Open a terminal to perform a search for matching
+packages in the repositories.</p>
+<p>For example, here is a search for <code class="docutils literal notranslate"><span class="pre">pymol</span></code></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>apt search pymol
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You do not need to include <code class="docutils literal notranslate"><span class="pre">sudo</span></code> here.</p>
+</div>
+<p>This will output matching results from repositories,
+if any:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="hll"><span class="go">p   pymol           - Molecular Graphics System</span>
+</span><span class="go">p   pymol-data      - data files for PyMOL</span>
+<span class="go">p   python3-pymol   - Molecular Graphics System (Python 3 module</span>
+</pre></div>
+</div>
+<p>Once you have identified the correct package name — in
+this case, it is <code class="docutils literal notranslate"><span class="pre">pymol</span></code> you can proceed
+towards installing the package.</p>
+</section>
+<section id="installing-a-package">
+<h3>Installing a package<a class="headerlink" href="#installing-a-package" title="Permalink to this headline">¶</a></h3>
+<p>You can install a package using the following command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt install pymol
+</pre></div>
+</div>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p><em>You need to include sudo here.</em></p>
+<p>Also, in the commands below, you will be asked to
+enter <em>your password</em>.</p>
+<p>You will also need to confirm if
+you would like to continue with the changes.
+Type <code class="docutils literal notranslate"><span class="pre">y</span></code> and then press the <code class="docutils literal notranslate"><span class="pre">ENTER</span></code> key to proceed.</p>
+</div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="hll"><span class="go">[sudo] password for user:</span>
+</span><span class="go">Reading package lists... Done</span>
+<span class="go">Building dependency tree</span>
+<span class="go">Reading state information... Done</span>
+<span class="go">The following additional packages will be installed:</span>
+<span class="go">  pymol-data python3-pymol</span>
+<span class="go">The following NEW packages will be installed:</span>
+<span class="go">  pymol pymol-data python3-pymol</span>
+<span class="go">0 upgraded, 3 newly installed, 0 to remove and</span>
+<span class="go">4 not upgraded.</span>
+<span class="go">Need to get 0 B/5,192 kB of archives.</span>
+<span class="go">After this operation, 19.8 MB of additional disk</span>
+<span class="go">space will be used.</span>
+<span class="hll"><span class="go">Do you want to continue? [Y/n] y</span>
+</span></pre></div>
+</div>
+<p>The package will now be installed.</p>
+</section>
+<section id="removing-an-installed-package">
+<h3>Removing an installed package<a class="headerlink" href="#removing-an-installed-package" title="Permalink to this headline">¶</a></h3>
+<p>To remove an installed package, use the command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt remove pymol
+</pre></div>
+</div>
+<p>The command above does not remove dependent packages.
+You can remove them using:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt autoremove
+</pre></div>
+</div>
+</section>
+<section id="updating-packages">
+<h3>Updating packages<a class="headerlink" href="#updating-packages" title="Permalink to this headline">¶</a></h3>
+<p>To update <em>all installed packages</em>, you can use these
+commands:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt update
+sudo apt upgrade
+</pre></div>
+</div>
+<p>To update <em>a specific package</em> —
+if an update is available, you can simply use
+<code class="docutils literal notranslate"><span class="pre">apt</span> <span class="pre">install</span></code> again:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt install package_name
+</pre></div>
+</div>
+</section>
+</section>
+<section id="why-is-this-a-quick-and-easy-method">
+<h2>Why is this a quick and easy method?<a class="headerlink" href="#why-is-this-a-quick-and-easy-method" title="Permalink to this headline">¶</a></h2>
+<p>You can use a graphical user interface (Software Manager)
+or the command-line (<code class="docutils literal notranslate"><span class="pre">apt</span></code>) to install software
+available in Linux package repositories.</p>
+<p>Software installed in this manner will also be kept
+updated along with the rest of the system.</p>
+</section>
+<section id="additional-software-repositories">
+<h2>Additional software repositories<a class="headerlink" href="#additional-software-repositories" title="Permalink to this headline">¶</a></h2>
+<p>It takes some time for newer versions of software to
+become available in distribution repositories.</p>
+<p>If your software of interest is not available or if you
+need a more recent version of the software, you could
+try installing them from these additional sources:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="../python/index.html"><span class="doc">Python packages</span></a> from <a class="reference internal" href="../../glossary.html#term-PyPI"><span class="xref std std-term">PyPI</span></a></p></li>
+<li><p><a class="reference internal" href="../perl/index.html"><span class="doc">Perl modules</span></a> from <a class="reference internal" href="../../glossary.html#term-CPAN"><span class="xref std std-term">CPAN</span></a></p></li>
+<li><p><a class="reference internal" href="../r/index.html"><span class="doc">R packages</span></a> from <a class="reference internal" href="../../glossary.html#term-CRAN"><span class="xref std std-term">CRAN</span></a> or <a class="reference internal" href="../../glossary.html#term-Bioconductor"><span class="xref std std-term">Bioconductor</span></a></p></li>
+<li><p><a class="reference internal" href="../conda/index.html"><span class="doc">Conda packages</span></a> from <a class="reference internal" href="../../glossary.html#term-Anaconda-Cloud"><span class="xref std std-term">Anaconda Cloud</span></a></p></li>
+</ul>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Software installed using these methods, will also need
+to be kept updated manually.</p>
+</div>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">Linux for Biologists</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../about/index.html">1. About this book</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../using-linux/index.html">2. Getting started with Linux</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">3. Getting software on Linux</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">3.1. The quick and easy method</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="requirements.html">3.1.1. Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="installing-software.html">3.1.2. Finding and installing software</a></li>
+<li class="toctree-l3"><a class="reference internal" href="removing-software.html">3.1.3. Removing installed software</a></li>
+<li class="toctree-l3"><a class="reference internal" href="updating-software.html">3.1.4. Updating installed software</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">3.1.5. Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../python/index.html">3.2. Python packages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../perl/index.html">3.3. Perl modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../r/index.html">3.4. R packages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../conda/index.html">3.5. Conda packages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../debian-package/index.html">3.6. Debian packages</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../command-line/index.html">4. Using the Linux command line</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../galaxy/index.html">5. Getting started with Galaxy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../documentation/index.html">6. Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../glossary.html">7. Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../credits.html">8. Credits</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="../index.html"><span class="section-number">3. </span>Getting software on Linux</a><ul>
+  <li><a href="index.html"><span class="section-number">3.1. </span>The quick and easy method</a><ul>
+      <li>Previous: <a href="updating-software.html" title="previous chapter"><span class="section-number">3.1.4. </span>Updating installed software</a></li>
+      <li>Next: <a href="../python/index.html" title="next chapter"><span class="section-number">3.2. </span>Python packages</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, Vimalkumar Velayudhan.
+      
+      |
+      <a href="../../_sources/getting-software/quick-and-easy/notes.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

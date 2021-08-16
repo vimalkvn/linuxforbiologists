@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>4.2.7. ls — list files &#8212; Linux for Biologists 2021 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/alabaster.css" />
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="4.2.8. cp — copy files" href="cp.html" />
+    <link rel="prev" title="4.2.6. rmdir — remove empty directory" href="rmdir.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="ls-list-files">
+<h1><span class="section-number">4.2.7. </span><code class="docutils literal notranslate"><span class="pre">ls</span></code> — list files<a class="headerlink" href="#ls-list-files" title="Permalink to this headline">¶</a></h1>
+<p>To list files in a directory, use the <code class="docutils literal notranslate"><span class="pre">ls</span></code> command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ls
+</pre></div>
+</div>
+<p>Output:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos</span>
+</pre></div>
+</div>
+<section id="listing-hidden-files">
+<h2>Listing hidden files<a class="headerlink" href="#listing-hidden-files" title="Permalink to this headline">¶</a></h2>
+<p>You can provide additional options to <code class="docutils literal notranslate"><span class="pre">ls</span></code>.
+It will change how the command works.</p>
+<p>For example, to display hidden files and directories
+too, use:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ls -a
+</pre></div>
+</div>
+<p>Output:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">.              .cache     Downloads    .local    Public</span>
+<span class="go">..             .cinnamon  .gnupg       .bash_history  .config</span>
+<span class="go">.bash_logout   Desktop    Pictures     .var      Videos</span>
+<span class="go">.bashrc        Documents  .linuxmint   .profile  .Xauthority</span>
+</pre></div>
+</div>
+</section>
+<section id="getting-a-detailed-file-listing">
+<h2>Getting a detailed file listing<a class="headerlink" href="#getting-a-detailed-file-listing" title="Permalink to this headline">¶</a></h2>
+<p>To get a detailed listing of files, use:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ls -l
+</pre></div>
+</div>
+<p>Output:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">total 32</span>
+<span class="go">drwxr-xr-x 2 user user 4096 Feb 17 11:13 Desktop</span>
+<span class="go">drwxr-xr-x 2 user user 4096 Mar  4 11:41 Documents</span>
+<span class="go">drwxr-xr-x 2 user user 4096 Feb 17 11:13 Downloads</span>
+<span class="go">drwxr-xr-x 2 user user 4096 Feb 17 11:13 Music</span>
+<span class="go">drwxr-xr-x 2 user user 4096 Mar  4 11:27 Pictures</span>
+<span class="go">drwxr-xr-x 2 user user 4096 Feb 17 11:13 Public</span>
+<span class="go">drwxr-xr-x 2 user user 4096 Feb 17 11:13 Templates</span>
+<span class="go">drwxr-xr-x 2 user user 4096 Feb 17 11:13 Videos</span>
+</pre></div>
+</div>
+</section>
+<section id="combining-multiple-options">
+<h2>Combining multiple options<a class="headerlink" href="#combining-multiple-options" title="Permalink to this headline">¶</a></h2>
+<p>You can combine multiple options like this:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ls -la
+</pre></div>
+</div>
+<p>Output:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">total 144</span>
+<span class="go">drwxr-xr-x 19 user user  4096 Mar 12 10:00 .</span>
+<span class="go">drwxr-xr-x  3 root root  4096 Feb 17 10:51 ..</span>
+<span class="go">-rw-------  1 user user   190 Mar  4 10:32 .bash_history</span>
+<span class="go">-rw-r--r--  1 user user   220 Feb 17 10:51 .bash_logout</span>
+<span class="go">-rw-r--r--  1 user user  3771 Feb 17 10:51 .bashrc</span>
+<span class="go">drwx------ 17 user user  4096 Mar  3 19:28 .cache</span>
+<span class="go">drwxrwxr-x  4 user user  4096 Feb 17 11:40 .cinnamon</span>
+</pre></div>
+</div>
+<p>To see the list of all options that <code class="docutils literal notranslate"><span class="pre">ls</span></code> supports, use:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ls --help
+</pre></div>
+</div>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">Linux for Biologists</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../about/index.html">1. About this book</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../using-linux/index.html">2. Getting started with Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-software/index.html">3. Getting software on Linux</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">4. Using the Linux command line</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../shell-terminal.html">4.1. Shell and Terminal</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">4.2. Commands — an overview</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="options.html">4.2.1. Command options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="help.html">4.2.2. Getting help on using commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="date.html">4.2.3. <code class="docutils literal notranslate"><span class="pre">date</span></code> — display current date and time</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cd.html">4.2.4. <code class="docutils literal notranslate"><span class="pre">cd</span></code> — change directory</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mkdir.html">4.2.5. <code class="docutils literal notranslate"><span class="pre">mkdir</span></code> — create new directory</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rmdir.html">4.2.6. <code class="docutils literal notranslate"><span class="pre">rmdir</span></code> — remove empty directory</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">4.2.7. <code class="docutils literal notranslate"><span class="pre">ls</span></code> — list files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cp.html">4.2.8. <code class="docutils literal notranslate"><span class="pre">cp</span></code> — copy files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cat.html">4.2.9. <code class="docutils literal notranslate"><span class="pre">cat</span></code> — display contents of files or combine them</a></li>
+<li class="toctree-l3"><a class="reference internal" href="less.html">4.2.10. <code class="docutils literal notranslate"><span class="pre">less</span></code> — view and navigate file contents</a></li>
+<li class="toctree-l3"><a class="reference internal" href="head.html">4.2.11. <code class="docutils literal notranslate"><span class="pre">head</span></code> — print first few lines of a file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tail.html">4.2.12. <code class="docutils literal notranslate"><span class="pre">tail</span></code> — print last few lines of a file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mv.html">4.2.13. <code class="docutils literal notranslate"><span class="pre">mv</span></code> — move a file or directory</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rm.html">4.2.14. <code class="docutils literal notranslate"><span class="pre">rm</span></code> — remove files or directories</a></li>
+<li class="toctree-l3"><a class="reference internal" href="echo.html">4.2.15. <code class="docutils literal notranslate"><span class="pre">echo</span></code> — display text or values of variables</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../other-commands/index.html">4.3. Other useful commands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../editing-text/index.html">4.4. Editing text files using nano</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exercise/index.html">4.5. Exercise — using the command-line</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../notes.html">4.6. Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../galaxy/index.html">5. Getting started with Galaxy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../documentation/index.html">6. Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../glossary.html">7. Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../credits.html">8. Credits</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="../index.html"><span class="section-number">4. </span>Using the Linux command line</a><ul>
+  <li><a href="index.html"><span class="section-number">4.2. </span>Commands — an overview</a><ul>
+      <li>Previous: <a href="rmdir.html" title="previous chapter"><span class="section-number">4.2.6. </span><code class="docutils literal notranslate"><span class="pre">rmdir</span></code> — remove empty directory</a></li>
+      <li>Next: <a href="cp.html" title="next chapter"><span class="section-number">4.2.8. </span><code class="docutils literal notranslate"><span class="pre">cp</span></code> — copy files</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, Vimalkumar Velayudhan.
+      
+      |
+      <a href="../../_sources/command-line/commands/ls.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>4.5.6. Search database using query sequence &#8212; Linux for Biologists 2021 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/alabaster.css" />
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="4.6. Notes" href="../notes.html" />
+    <link rel="prev" title="4.5.5. Download protein sequence database" href="database.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="search-database-using-query-sequence">
+<h1><span class="section-number">4.5.6. </span>Search database using query sequence<a class="headerlink" href="#search-database-using-query-sequence" title="Permalink to this headline">¶</a></h1>
+<p>With the query sequence downloaded and the database
+downloaded and formatted, you can start performing a
+BLAST search.</p>
+<p>First, change into the directory containing the
+query sequence:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> ~/projects/sars-cov-2
+</pre></div>
+</div>
+<p>Now run the <code class="docutils literal notranslate"><span class="pre">blastp</span></code> command using the query sequence
+and the complete path to the database:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>blastp -query P0DTC2.fasta <span class="se">\</span>
+-db /home/user/databases/swissprot <span class="se">\</span>
+-out blastp-results.txt <span class="se">\</span>
+-outfmt <span class="s2">&quot;7 sacc stitle qlen slen pident&quot;</span>
+</pre></div>
+</div>
+<p>What the options mean:</p>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">-query</span></code></dt><dd><p>Path to the query sequence.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">-db</span></code></dt><dd><p>Complete path of the sequence database.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">-out</span></code></dt><dd><p>File to save results to.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">-outfmt</span></code></dt><dd><p>Format of the output file. This will use format
+option <code class="docutils literal notranslate"><span class="pre">7</span></code> (tab-delimited text) and include the
+following information:</p>
+<ul class="simple">
+<li><p>accession number and description of matching sequences
+(<code class="docutils literal notranslate"><span class="pre">sacc</span></code> and <code class="docutils literal notranslate"><span class="pre">stitle</span></code>),</p></li>
+<li><p>query and subject sequence lengths (<code class="docutils literal notranslate"><span class="pre">qlen</span></code> and <code class="docutils literal notranslate"><span class="pre">slen</span></code>)</p></li>
+<li><p>percentage identity of the match (<code class="docutils literal notranslate"><span class="pre">pident</span></code>).</p></li>
+</ul>
+</dd>
+</dl>
+<p>When the database search is complete, you can open
+<code class="docutils literal notranslate"><span class="pre">blastp-results.txt</span></code> to view the results:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>less -S blastp-results.txt
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">-S</span></code> option of the <code class="docutils literal notranslate"><span class="pre">less</span></code> command disables
+word-wrap.</p>
+<p>Output:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span># BLASTP 2.9.0+
+# Query: sp|P0DTC2|SPIKE_SARS2 Spike glycoprotein OS=Severe acute respiratory syndrome coronavirus 2 OX=2697049 GN=S PE=1 SV=1
+# Database: /home/user/databases/swissprot
+# Fields: subject acc., subject title, query length, subject length, % identity
+# 88 hits found
+P0DTC2      Spike glycoprotein OS=Severe acute respiratory syndrome coronavirus 2 OX=2697049 GN=S PE=1 SV=1 1273    1273    100.000
+P59594      Spike glycoprotein OS=Severe acute respiratory syndrome coronavirus OX=694009 GN=S PE=1 SV=1    1273    1255    76.038
+Q3LZX1      Spike glycoprotein OS=Bat coronavirus HKU3 OX=442736 GN=S PE=3 SV=1     1273    1242    76.041
+Q3I5J5      Spike glycoprotein OS=Bat coronavirus Rp3/2004 OX=349344 GN=S PE=1 SV=1 1273    1241    75.334
+Q0Q475      Spike glycoprotein OS=Bat coronavirus 279/2005 OX=389167 GN=S PE=3 SV=1 1273    1241    74.745
+...
+</pre></div>
+</div>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">Linux for Biologists</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../about/index.html">1. About this book</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../using-linux/index.html">2. Getting started with Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-software/index.html">3. Getting software on Linux</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">4. Using the Linux command line</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../shell-terminal.html">4.1. Shell and Terminal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../commands/index.html">4.2. Commands — an overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../other-commands/index.html">4.3. Other useful commands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../editing-text/index.html">4.4. Editing text files using nano</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">4.5. Exercise — using the command-line</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="summary.html">4.5.1. Summary of steps</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sample.html">4.5.2. Get sample data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="install.html">4.5.3. Install NCBI BLAST+ package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="query.html">4.5.4. Download query sequence</a></li>
+<li class="toctree-l3"><a class="reference internal" href="database.html">4.5.5. Download protein sequence database</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">4.5.6. Search database using query sequence</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../notes.html">4.6. Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../galaxy/index.html">5. Getting started with Galaxy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../documentation/index.html">6. Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../glossary.html">7. Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../credits.html">8. Credits</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="../index.html"><span class="section-number">4. </span>Using the Linux command line</a><ul>
+  <li><a href="index.html"><span class="section-number">4.5. </span>Exercise — using the command-line</a><ul>
+      <li>Previous: <a href="database.html" title="previous chapter"><span class="section-number">4.5.5. </span>Download protein sequence database</a></li>
+      <li>Next: <a href="../notes.html" title="next chapter"><span class="section-number">4.6. </span>Notes</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, Vimalkumar Velayudhan.
+      
+      |
+      <a href="../../_sources/command-line/exercise/search.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
