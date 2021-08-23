@@ -1,4 +1,7 @@
 .doctrees
 .buildinfo
 objects.inv
-_sources
+build
+venv
+public
+
