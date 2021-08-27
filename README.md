@@ -1,14 +1,18 @@
 # Linux for Biologists — a cookbook
-*A beginner's guide for students or researchers in biological 
-sciences*. 
+[![Documentation Status](https://readthedocs.org/projects/linuxforbiologists/badge/?version=latest)](https://linuxforbiologists.readthedocs.io/en/latest/?badge=latest)
+[![License](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-blue)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+
+A beginner's guide for students or researchers in biological 
+sciences. 
 
 The primary focus of the book, is in using graphical user 
 interfaces (GUIs) to accomplish tasks, but methods using the 
 command line interface are also discussed.
 
-<button>[Read it online](https://linuxforbiologists.readthedocs.io)</button>
+[Read it online](https://linuxforbiologists.readthedocs.io)
 
-## Support my work
+## Support this project
 By purchasing the ebook version in PDF and EPUB formats from:  
 [Amazon](https://www.amazon.com/dp/B096YNSZ44), 
 [Leanpub](https://leanpub.com/linuxforbiologists/) or

@@ -13,7 +13,7 @@
 # import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
-
+import sphinx_rtd_theme
 
 # -- Project information -----------------------------------------------------
 project = 'Linux for Biologists'
@@ -22,7 +22,7 @@ author = 'Vimalkumar Velayudhan'
 
 # The full version, including alpha/beta/rc tags
 release = '2021'
-version = '1'
+version = 'latest'
 
 
 # -- General configuration ---------------------------------------------------
@@ -30,7 +30,7 @@ version = '1'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = []
+extensions = ["sphinx_rtd_theme"]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -48,22 +48,14 @@ pygments_style = 'colorful'
 # a list of builtin themes.
 #
 
-html_theme = 'alabaster'
+html_theme = 'sphinx_rtd_theme'
+html_logo = '_static/logo.svg'
+html_show_sourcelink = False
 html_theme_options = {
-    'font_family':
-        '"Source Serif 4", Ubuntu, serif',
-    'head_font_family':
-        'Fira Sans, Ubuntu, sans-serif',
-    'code_font_family': 'monospace, sans-serif',
-    'pre_bg': '#efefef',
-    'note_bg': '#e6f7ff',
-    'note_border': '#ccefff',
-    'sidebar_list': '#777777',
-    'body_text': '#313131',
-    'logo': 'linuxforbiologists-logo.png',
-    'logo_name': True,
-    'logo_text_align': 'left',
-    'show_relbars': True
+    'style_external_links': True,
+    'style_nav_header_background': '#313131',
+    'sticky_navigation': False,
+    'logo_only': True
 }
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
