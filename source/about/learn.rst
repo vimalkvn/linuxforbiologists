@@ -9,12 +9,12 @@ Using the included recipes, you will learn how to:
 * Run some basic commands
 * Run the Galaxy platform on your computer
 
-.. note::
+If you need help
+----------------
+While following this book or while using the Linbio desktop,
+you can post your query in the `community forum`_ of this
+book on Leanpub.
 
-   *If you need help while following this book…*
-   
-   You can visit the forums of this book on Leanpub. 
-   If your query is not answered there, please start 
-   a new discussion.
-   
-   https://community.leanpub.com/c/linuxforbiologi
+.. links
+
+.. _community forum: https://community.leanpub.com/c/linuxforbiologi
