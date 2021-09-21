@@ -58,70 +58,38 @@
 
 
 /* styles */
-body {
-  font-size: 1em;
+h1, h2 {
+  margin-top: 2.4rem;
 }
 
-div.body {
-  padding-bottom: 30px;
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
 }
 
-div.body p, div.body dd, div.body li {
-  line-height: normal;
+div.toctree-wrapper.compound li.toctree-l1 {
+  margin-top: 0.6rem;
 }
 
-h1.logo.logo-name {
-  font-family: "Fira Sans", sans-serif;
+div.toctree-wrapper.compound li.toctree-l1 > a {
+  font-weight: 600;
 }
 
-h1.logo.logo-name > a {
-  border-bottom: none;
-}
-
-div.sphinxsidebarwrapper p.logo {
-  text-align: left;
-}
-
-div.related.top, div.related.bottom {
-  padding-bottom: 2em;
-}
-
-nav#rellinks {
-  float: inherit;
-  color: #555;
-  font-family: "Fira Sans", sans-serif;
-}
-
-nav#rellinks li + li {
-  float: right;
-}
-
-nav#rellinks li + li::before {
-  content: "";
-}
-
-tt, code {
-  background: #efefef;
-  padding: 0.01rem 0.3rem;
-}
-
-div.note tt, div.note code {
-  background: #ccefff;
-}
-
-div.body h1, div.body h2, div.body h3, div.body h4, div.body h5, div.body h6 {
-  color: #444;
+div.toctree-wrapper.compound li.toctree-l2 > a {
   font-weight: 500;
 }
 
-.guilabel, .menuselection {
-  font-size: 0.9em;
-  font-family: "Fira Sans", sans-serif;
+div.toctree-wrapper.compound li.toctree-l2 {
+  margin-top: 0.3rem;
+}
+
+div.related-information {
+  margin-top: 6em;
 }
 
 div.admonition {
-    margin: 40px 0px;
-    padding: 20px 30px;
+  margin: 3rem auto;
 }
 
-
+article .figure, article figure {
+  margin: 3em auto;
+}

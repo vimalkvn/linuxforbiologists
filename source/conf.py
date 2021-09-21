@@ -13,7 +13,6 @@
 # import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
-import sphinx_rtd_theme
 
 # -- Project information -----------------------------------------------------
 project = 'Linux for Biologists'
@@ -22,7 +21,7 @@ author = 'Vimalkumar Velayudhan'
 
 # The full version, including alpha/beta/rc tags
 release = '2021'
-version = 'latest'
+version = '2021-09-21'
 
 
 # -- General configuration ---------------------------------------------------
@@ -40,30 +39,27 @@ templates_path = ['_templates']
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = ['build', 'draft.rst']
 
-pygments_style = 'colorful'
-
 # -- Options for HTML output -------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
 
-html_theme = 'sphinx_rtd_theme'
-html_logo = '_static/logo.svg'
+html_theme = 'furo'
 html_show_sourcelink = False
 html_theme_options = {
-    'style_external_links': True,
-    'style_nav_header_background': '#313131',
-    'sticky_navigation': False,
-    'logo_only': True
+    "light_logo": "logo-text.png",
+    "dark_logo": "logo-text-dark.png",
+    "sidebar_hide_name": True,
 }
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+html_css_files = ['custom.css']
 
 # html_title = 'Linux and Programming Cookbook for Biologists'
-html_short_title = 'Linux for Biologists'
+html_title = 'Linux for Biologists'
 
 numfig = True
 numfig_secnum_depth = 0
