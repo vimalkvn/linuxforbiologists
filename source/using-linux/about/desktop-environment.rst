@@ -12,7 +12,6 @@ Examples:
 - MATE (:numref:`fig-212d`)
 - Cinnamon (:numref:`fig-212e`) 
 
-
 Linux distributions might offer additional variants 
 for download, depending on the desktop environment in use.
 
@@ -40,20 +39,4 @@ for download, depending on the desktop environment in use.
 .. figure:: images/ubuntu-mate.png
 
    MATE
-
-
-This book uses Linux Mint (Cinnamon)
-------------------------------------
-This book will use Linux Mint 20.1 with the Cinnamon 
-desktop environment as the reference distribution 
-(:numref:`fig-212e`). 
-
-.. _fig-212e:
-
-.. figure:: images/linux-mint-cinnamon.png
-
-   Linux Mint with Cinnamon desktop environment
-   
-All the included recipes have been tested on this 
-distribution.
 

@@ -1,20 +1,20 @@
 Requirements
 ============
-   
+
 VirtualBox installed on your computer
 -------------------------------------
-You can install VirtualBox by following the 
-instructions below depending on your 
+You can install VirtualBox by following the
+instructions below depending on your
 operating system.
 
 .. attention::
 
-   *Installing software will require administrator 
+   *Installing software will require administrator
    privileges.*
 
 Instructions for macOS and Windows
 ..................................
-You can download an installer for macOS or Windows 
+You can download an installer for macOS or Windows
 from the `Downloads <https://www.virtualbox.org/wiki/Downloads>`__
 section of the VirtualBox website (:numref:`fig-221a`).
 
@@ -31,8 +31,8 @@ package repositories. It is recommended you install it
 using your package manager like :term:`Synaptic` or
 :term:`apt`, dnf etc.,
 
-For example, to get VirtualBox working on Ubuntu 20.04 LTS, 
-you will need to install the ``virtualbox`` and 
+For example, to get VirtualBox working on Ubuntu 20.04 LTS,
+you will need to install the ``virtualbox`` and
 ``virtualbox-guest-additions-iso`` packages.
 
 .. note::
@@ -44,15 +44,18 @@ you will need to install the ``virtualbox`` and
 
 Virtual machine image of Linux Mint
 -----------------------------------
-You can download a ready-to-use virtual machine image
-of Linux Mint 20.1 from the website of this
-book:
+A virtual machine image of Linux Mint is distributed along
+with this e-book. You can can download it from SourceForge,
+using the link below.
 
-https://vimalkvn.com/linuxforbiologists
+**Download**: `linuxmint-20.1.ova`_
 
 It is distributed as an :term:`OVA` format file.
 
-Click on the download link and save the 
-``linuxmint-20.1.ova`` file to your computer.
+In the page that appears, click on the
+``linuxmint-20.1.ova`` link. This will download the
+file to your computer.
 
+.. links
 
+.. _linuxmint-20.1.ova: https://sourceforge.net/projects/linuxforbiologists/files/linuxmint-20.1/

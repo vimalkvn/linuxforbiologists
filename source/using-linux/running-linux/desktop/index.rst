@@ -1,12 +1,26 @@
-.. _applications-menu:
+The Desktop
+===========
+When you log in, you will be placed in the default
+desktop environment. In the case of Linux Mint, this is
+:term:`Cinnamon`.
 
-The Cinnamon desktop
-====================
+.. note::
+
+   If you are using the virtual machine image distributed
+   with this book, the default user account for logging
+   in to the virtual machine, is:
+
+   | Username: ``user``
+   | Password: ``user``
+
+
 In its default configuration, the Cinnamon desktop
 includes the following components (:numref:`fig-231a`):
 
+.. _applications-menu:
+
 :guilabel:`Applications Menu`
-   — search and launch installed applications, logout, 
+   — search and launch installed applications, logout,
    shutdown or restart system.
 
 :guilabel:`Panel`

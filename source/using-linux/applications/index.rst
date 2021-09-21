@@ -23,6 +23,7 @@ installed applications using the search bar.
    :doc:`Inkscape <inkscape>`. You can install 
    them using :term:`Software Manager`.
 
+---
 
 .. toctree::
    :maxdepth: 1

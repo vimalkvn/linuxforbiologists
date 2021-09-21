@@ -4,7 +4,7 @@ Changing system settings
 ========================
 The :guilabel:`System Settings` application can be used to
 customize the desktop, the operating system and hardware
-(:numref:`fig-232a`). 
+(:numref:`fig-232a`).
 
 You can launch it from the applications' menu.
 
@@ -14,8 +14,8 @@ You can launch it from the applications' menu.
 
    System Settings application
 
-The settings you can configure here include accessibility, 
-user accounts, date and time, keyboard layout, language, 
+The settings you can configure here include accessibility,
+user accounts, date and time, keyboard layout, language,
 network, display and more.
 
 .. index:: System Settings; Keyboard Layout
