@@ -11,7 +11,7 @@ BUILDDIR      = build
 SCREENOPTS = -D latex_elements.pointsize=12pt -D latex_elements.classoptions=,openany,oneside -D latex_elements.preamble=\\usepackage{mfgan} -D code_example_wrap=67
 
 serve:
-	sphinx-autobuild --host 192.168.1.2 source build/html
+	sphinx-autobuild source build/html
 pdf:
 	$(SPHINXBUILD) -b latex $(SCREENOPTS) $(ALLSPHINXOPTS) $(SOURCEDIR) $(BUILDDIR)/latex
 	$(MAKE) -C $(BUILDDIR)/latex all-pdf
