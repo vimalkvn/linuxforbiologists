@@ -40,7 +40,8 @@ version from
    getting-software/index
    command-line/index
    galaxy/index
-   documentation/index
+   zotero/index
+   zim/index
    glossary
    credits
 
