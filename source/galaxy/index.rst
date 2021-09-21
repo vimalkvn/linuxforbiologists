@@ -1,5 +1,5 @@
-Getting started with Galaxy
-===========================
+Galaxy
+======
 The Galaxy_ project enables researchers to perform 
 computational analyses using a web interface.
  
