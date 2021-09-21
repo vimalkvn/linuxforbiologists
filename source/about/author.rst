@@ -1,5 +1,5 @@
-About the author
-================
+The author
+==========
 .. raw:: latex
 
    \begin{wrapfigure}{R}{0.3\textwidth}

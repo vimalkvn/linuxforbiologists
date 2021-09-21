@@ -1,5 +1,5 @@
-Commands — an overview
-======================
+An overview of commands
+=======================
 This section provides an overview of some commands 
 that are used frequently on Linux systems.
 

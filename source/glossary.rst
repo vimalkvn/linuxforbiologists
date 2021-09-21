@@ -68,6 +68,11 @@ Glossary
       
       Website: https://metacpan.org/pod/Bio::Phylo
 
+   Cinnamon
+      Default desktop environment in Linux Mint.
+
+      Website: https://linuxmint.com/
+
    commands
       Also called as binaries or executables.
 

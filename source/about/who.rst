@@ -5,6 +5,7 @@ sciences and are new to Linux, this book will help you
 get started quickly.
 
 The primary focus is in using graphical user interfaces 
-(GUIs) to accomplish tasks, but I have also included 
-methods using the command line interface.
+(GUIs) to accomplish tasks, but you will also find
+methods that make use of the command line
+interface (CLI), in this book.
 
