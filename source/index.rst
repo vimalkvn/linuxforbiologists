@@ -11,8 +11,19 @@ Learn how to run and use a Linux desktop, use the
 included software, run some basic commands,
 and work with files and directories.
 
-The e-book
-----------
+
+Support this project
+--------------------
+If you have found this work useful and would like to see its
+continued development, please support by
+`making a donation`_ or `sponsoring me`_ on GitHub.
+
+.. raw:: html
+
+   <iframe src="https://github.com/sponsors/vimalkvn/card" title="Sponsor vimalkvn" height="225" width="600" style="border: 0;"></iframe>
+
+Get the e-book
+--------------
 .. image:: _static/e-book.jpg
    :alt: cover of Linux for Biologists e-book
    :scale: 60
@@ -22,27 +33,23 @@ The e-book
 This book is free to read under the `creative commons`_
 license.
 
-You can support my work by purchasing the e-book version
-(PDF and EPUB) from Leanpub_.
+You can get the e-book version (PDF and EPUB) from
+Leanpub_. With your purchase, you will get:
 
-With your purchase, you will get direct **email support**
-and **updated versions**, when released.
+- Direct **email support**
+- **Updated versions**, when released
 
-Sample chapters
-...............
+---
 
-In PDF_ and EPUB_ formats.
+Sample chapters: PDF_ and EPUB_.
 
-Screenshots
-...........
-Some pages from the PDF format e-book. Click to view a
-larger version.
+Screenshots of some pages from the e-book (PDF).
+*Click to view a larger version*.
 
 .. image:: _static/sample.png
    :alt: pages from Linux for Biologists e-book
    :target: _static/sample.png
 
----
 
 If you need help
 ----------------
@@ -66,7 +73,6 @@ discussed in the book. Once you make a booking, I will be
 in touch to arrange a suitable date and time for the
 online meeting.
 
----
 
 Table of Contents
 -----------------
@@ -99,4 +105,6 @@ Last updated: |today|
 .. _EPUB: _static/sample.epub
 .. _community forum: https://community.leanpub.com/c/linuxforbiologi
 .. _live support session: https://gumroad.com/l/riVNV
+.. _making a donation: https://paypal.me/vimalkvn
+.. _sponsoring me: https://github.com/sponsors/vimalkvn
 
