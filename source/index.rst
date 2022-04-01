@@ -5,74 +5,76 @@
 
 Linux for Biologists
 ====================
-A guide for students and researchers.
+**A beginner’s guide for students or researchers in biological sciences.**
 
-Learn how to run and use a Linux desktop, use the
-included software, run some basic commands,
+Learn how to use the Linux desktop and
+included software, run basic commands,
 and work with files and directories.
 
+.. only:: html
 
-Support this project
---------------------
-If you have found this work useful and would like to see its
-continued development, please support by
-`making a donation`_ or `sponsoring me`_ on GitHub.
+   Get the e-book
+   --------------
 
-.. raw:: html
+   .. image:: _static/e-book.jpg
+      :alt: cover of Linux for Biologists e-book
+      :scale: 75
+      :align: right
+      :target: https://vimalkvn.gumroad.com/l/linuxforbiologists
 
-   <iframe src="https://github.com/sponsors/vimalkvn/card" title="Sponsor vimalkvn" height="225" width="600" style="border: 0;"></iframe>
+   You are currently reading the online version of the book.
 
-Get the e-book
---------------
-.. image:: _static/e-book.jpg
-   :alt: cover of Linux for Biologists e-book
-   :scale: 60
-   :align: right
-   :target: https://leanpub.com/linuxforbiologists/
+   If you wish, you can get the e-book in PDF and EPUB
+   formats using the link below,
+   for a price you choose (€0+).
 
-This book is free to read under the `creative commons`_
-license.
+   .. raw:: html
 
-You can get the e-book version (PDF and EPUB) from
-Leanpub_. With your purchase, you will get:
+      <script src="https://gumroad.com/js/gumroad.js"></script>
+      <a class="gumroad-button" href="https://vimalkvn.gumroad.com/l/linuxforbiologists">Download from</a>
 
-- Direct **email support**
-- **Updated versions**, when released
 
----
+   In addition to being able to read offline, you will
+   get updated versions by email.
 
-Sample chapters: PDF_ and EPUB_.
+   Thanks for supporting my work!
 
-Screenshots of some pages from the e-book (PDF).
-*Click to view a larger version*.
+   Samples from the e-book
+   .......................
 
-.. image:: _static/sample.png
-   :alt: pages from Linux for Biologists e-book
-   :target: _static/sample.png
+   A chapter in PDF_ and EPUB_ formats.
 
+   .. image:: _static/sample.png
+      :alt: pages from Linux for Biologists e-book. Click to view a larger version.
+      :target: _static/sample.png
 
 If you need help
 ----------------
-If you need help while following this book, you can post
-your query in the `community forum`_.
+You can post your query in the community forums on
+LinkedIn_, Quora_, Reddit_, or Leanpub_.
+
+**If you need help faster**, you can book a
+`1-hour live support`_ session with me
+(free at the moment).
+
+.. raw:: html
+
+   <a class="gumroad-button" href="https://vimalkvn.gumroad.com/l/linuxforbiologists?variant=E-book%20%2B%201-hour%20live%20support">Book live support</a>
+
+Once you make a booking, I will be in touch with you to
+arrange a suitable date and time for an online meeting
+using Jitsi Meet.
 
 .. note::
+
+   During the meeting, I will help you with your query or
+   provide a walk-through of concepts discussed in the book.
 
    If your query is related to the usage of a software
    discussed in the book, please contact the website or
    the author of the software itself.
 
-Live support
-............
-If you need help faster, you can book a 1 hour
-`live support session`_.
-
-During the session, I will help you with your query or
-provide a walk-through of concepts
-discussed in the book. Once you make a booking, I will be
-in touch to arrange a suitable date and time for the
-online meeting.
-
+---
 
 Table of Contents
 -----------------
@@ -99,12 +101,12 @@ Last updated: |today|
 
 .. links
 
-.. _creative commons: http://creativecommons.org/licenses/by-nc-sa/4.0/
-.. _Leanpub: https://leanpub.com/linuxforbiologists/
+.. _CC BY-NC-SA 4.0: http://creativecommons.org/licenses/by-nc-sa/4.0/
 .. _PDF: _static/sample.pdf
 .. _EPUB: _static/sample.epub
-.. _community forum: https://community.leanpub.com/c/linuxforbiologi
-.. _live support session: https://gumroad.com/l/riVNV
-.. _making a donation: https://paypal.me/vimalkvn
-.. _sponsoring me: https://github.com/sponsors/vimalkvn
-
+.. _Gumroad: https://vimalkvn.gumroad.com/l/linuxforbiologists
+.. _1-hour live support: https://vimalkvn.gumroad.com/l/linuxforbiologists?variant=E-book%20%2B%201-hour%20live%20support
+.. _LinkedIn: https://www.linkedin.com/groups/14075264/
+.. _Reddit: https://www.reddit.com/r/linuxforbio/
+.. _Quora: https://linuxforbio.quora.com/
+.. _Leanpub: https://community.leanpub.com/c/linuxforbiologi
