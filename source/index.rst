@@ -16,17 +16,16 @@ and work with files and directories.
    Get the e-book
    --------------
 
-   .. image:: _static/e-book.jpg
+   .. image:: _static/e-book.png
       :alt: cover of Linux for Biologists e-book
-      :scale: 75
+      :scale: 60
       :align: right
       :target: https://vimalkvn.gumroad.com/l/linuxforbiologists
 
    You are currently reading the online version of the book.
 
-   If you wish, you can get the e-book in PDF and EPUB
-   formats using the link below,
-   for a price you choose (€0+).
+   Get the e-book (PDF & EPUB) for a price you choose,
+   using the link below.
 
    .. raw:: html
 
@@ -34,19 +33,19 @@ and work with files and directories.
       <a class="gumroad-button" href="https://vimalkvn.gumroad.com/l/linuxforbiologists">Download from</a>
 
 
-   In addition to being able to read offline, you will
-   get updated versions by email.
+   **Why get the e-book?**
 
-   Thanks for supporting my work!
+   - you can read the book offline in your favourite e-reader
+   - you will get updated versions by email
+   - you will be supporting my work
 
-   Samples from the e-book
-   .......................
-
-   A chapter in PDF_ and EPUB_ formats.
+   **Sample pages from the e-book**
 
    .. image:: _static/sample.png
       :alt: pages from Linux for Biologists e-book. Click to view a larger version.
       :target: _static/sample.png
+
+   A chapter in PDF_ and EPUB_ formats.
 
 If you need help
 ----------------
